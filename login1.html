@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login here</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <p>or Login with</p>
+        <div class="social-icons">
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                <img src="f.png"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank">
+                <img src="twit.png"></a>
+            </li>
+            <li>
+                <a href="https://www.gmail.com" target="_blank">
+                <img src="g.png"></a>
+            </li>
+            
+            
+        </div>
+        <div id="login" class="input-box">
+            <input type="text" class="input-field" id="user" placeholder="User id" required>
+            <input type="text" class="input-field" id="pass" placeholder="password" required>
+            <input type="checkbox" class="check-box"><span>Remember password</span>
+            <a type="submit" class="submit-btn" href="index.html">Login</a>
+            <p>forgot password?</p>
+        </div>
+        <div id="register" class="input-box">
+            <input type="text" class="input-field" placeholder="User id" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="password" required>
+            <input type="checkbox" class="check-box"><span1>I agree to the terms and conditions</span1>
+            <a type="submit" class="submit-btn" href="index.html">Register</a>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+    </script>
+</body>
+</html>
